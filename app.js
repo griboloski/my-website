@@ -16,4 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
             link.style.color = '';
         });
     });
+
+    // Function to toggle the visibility of the menu bar
+    function toggleMenu() {
+        const menuBar = document.getElementById('menu-bar');
+        menuBar.classList.toggle('hidden');
+    }
+
+    // Add event listener to the toggle button to call the toggle function
+    const menuToggleButton = document.getElementById('menu-toggle');
+    menuToggleButton.addEventListener('click', toggleMenu);
 });

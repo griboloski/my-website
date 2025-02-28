@@ -93,3 +93,13 @@ p {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+/* Add a class for the hidden state of the menu bar */
+.hidden {
+    display: none;
+}
+
+/* Update the nav styles to include the hidden state class */
+nav.hidden {
+    display: none;
+}
