@@ -1,0 +1,100 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.site-header {
+  background-color: #1e1e1e;
+  padding: 20px;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../assets/images/placeholder-bg.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Music Section */
+.music-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.music-item {
+  background-color: #1e1e1e;
+  padding: 20px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.music-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Booking Section */
+.booking-section {
+  padding: 60px 20px;
+  background-color: #181818;
+  text-align: center;
+}
+
+.booking-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-section input,
+.booking-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
