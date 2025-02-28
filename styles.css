@@ -1,11 +1,21 @@
-/* Styles for header, main content area, and footer */
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Body defaults */
 body {
     background-color: #121212;
-    color: white !important;
-    padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header: dark background, white text */
 header {
     background-color: #333;
     color: #fff;
@@ -13,11 +23,14 @@ header {
     text-align: center;
 }
 
+/* Main: light background, dark text */
 main {
     padding: 20px;
     background-color: #f4f4f4;
+    color: #333; /* IMPORTANT: ensures dark text on light background */
 }
 
+/* Footer: dark background, white text */
 footer {
     background-color: #333;
     color: #fff;
@@ -25,8 +38,15 @@ footer {
     text-align: center;
 }
 
-/* Styles for buttons, links, and other UI elements */
-button {
+/* Basic text styling */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button, .button {
     background-color: #008cba;
     color: #fff;
     border: none;
@@ -35,20 +55,26 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: #005f5f;
 }
 
-a {
+/* Links */
+a, .link {
     color: #008cba;
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .link:hover {
     text-decoration: underline;
 }
 
-/* Styles for h2 and h3 tags */
+/* Headings */
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
 h2 {
     font-size: 24px;
     color: #333;
@@ -61,110 +87,27 @@ h3 {
     margin-top: 15px;
 }
 
-/* Styles for p tags */
-p {
-    font-size: 16px;
-    color: white !important;
-    line-height: 1.6;
-    margin-bottom: 15px;
+/* Code blocks */
+pre, code {
+    color: #ffffff;
+    background-color: #222;
+    padding: 5px;
 }
 
-/* Add a class for the hidden state of the menu bar */
-.hidden {
-    display: none;
-}
-
-/* Change text color when highlighted */
+/* Selection color */
 ::selection {
     background: #333;
     color: #fff;
 }
 
-/* Add CSS rules to improve the performance and professional touch of the website */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
+/* Container for layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.header, .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.main {
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.button {
-    background-color: #008cba;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.button:hover {
-    background-color: #005f5f;
-}
-
-.link {
-    color: #008cba;
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 20px;
-    color: #666;
-    margin-top: 15px;
-}
-
-p {
-    font-size: 16px;
-    color: white !important;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
+/* Hidden class */
 .hidden {
     display: none;
-}
-
-body, p, span, div {
-    color: white !important;
-}
-
-pre, code {
-    color: #ffffff;
-    background-color: #222;
-}
-
-* {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-* {
-    text-shadow: none !important;
-    filter: none !important;
 }
