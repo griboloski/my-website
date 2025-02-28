@@ -1,7 +1,7 @@
 /* Styles for header, main content area, and footer */
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: white !important;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -64,7 +64,7 @@ h3 {
 /* Styles for p tags */
 p {
     font-size: 16px;
-    color: #333;
+    color: white !important;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -141,11 +141,30 @@ h3 {
 
 p {
     font-size: 16px;
-    color: #333;
+    color: white !important;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
 .hidden {
     display: none;
+}
+
+body, p, span, div {
+    color: white !important;
+}
+
+pre, code {
+    color: #ffffff;
+    background-color: #222;
+}
+
+* {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+* {
+    text-shadow: none !important;
+    filter: none !important;
 }
