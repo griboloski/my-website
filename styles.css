@@ -1,4 +1,9 @@
 /* Styles for header, main content area, and footer */
+body {
+    background-color: black;
+    color: white;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -41,38 +46,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styles for the menu bar */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-/* Styles for the "About Us" and "Dashboard" links */
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 /* Styles for h2 and h3 tags */
 h2 {
     font-size: 24px;
@@ -96,10 +69,5 @@ p {
 
 /* Add a class for the hidden state of the menu bar */
 .hidden {
-    display: none;
-}
-
-/* Update the nav styles to include the hidden state class */
-nav.hidden {
     display: none;
 }
