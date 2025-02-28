@@ -19,4 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
             event.target.style.color = '';
         }
     });
+
+    // Add event listener for the new card section
+    const cardSection = document.querySelector('.card');
+    cardSection.addEventListener('click', function() {
+        alert('Card section clicked!');
+    });
 });
