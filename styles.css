@@ -72,3 +72,24 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Styles for h2 and h3 tags */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Styles for p tags */
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
