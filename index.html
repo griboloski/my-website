@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your DJ Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/images/placeholder-logo.png" alt="Logo" class="logo">
+      <h1>Your DJ Name</h1>
+      <p>Professional DJ for bookings & music releases.</p>
+    </div>
+  </section>
+
+  <!-- Music Releases Section -->
+  <section id="music" class="music-section">
+    <h2>Latest Music</h2>
+    <div class="music-grid">
+      <!-- Repeat this block for each release -->
+      <div class="music-item">
+        <img src="assets/images/placeholder-album.png" alt="Album Art">
+        <h3>Track Title</h3>
+        <p>Release Date or short description</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking-section">
+    <h2>Book Me</h2>
+    <form action="your-booking-endpoint" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Event Details" required></textarea>
+      <button type="submit">Submit Booking Request</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Your DJ Name. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
