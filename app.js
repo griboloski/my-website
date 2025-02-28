@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Add event listeners for buttons and other interactive elements
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
+    const container = document.querySelector('body');
+
+    container.addEventListener('click', function(event) {
+        if (event.target.tagName === 'BUTTON') {
             alert('Button clicked!');
-        });
+        }
     });
 
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        link.addEventListener('mouseover', function() {
-            link.style.color = 'red';
-        });
-        link.addEventListener('mouseout', function() {
-            link.style.color = '';
-        });
+    container.addEventListener('mouseover', function(event) {
+        if (event.target.tagName === 'A') {
+            event.target.style.color = 'red';
+        }
+    });
+
+    container.addEventListener('mouseout', function(event) {
+        if (event.target.tagName === 'A') {
+            event.target.style.color = '';
+        }
     });
 });
