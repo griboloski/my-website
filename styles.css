@@ -1,6 +1,6 @@
 /* Styles for header, main content area, and footer */
 body {
-    background-color: #121212;
+    background-color: #18005b;
     color: white !important;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
@@ -156,7 +156,7 @@ body, p, span, div {
 
 pre, code {
     color: #ffffff;
-    background-color: #222;
+    background-color: #150038;
 }
 
 * {
