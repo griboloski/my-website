@@ -111,3 +111,38 @@ pre, code {
 .hidden {
     display: none;
 }
+
+/* New card section styles */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.card .text-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card .visual {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover effect on links */
+a:hover, .link:hover {
+    color: #005f5f;
+    text-decoration: underline;
+}
